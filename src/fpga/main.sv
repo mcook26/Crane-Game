@@ -126,16 +126,6 @@ module main(input logic clk,
 	end 
 	
 	// Row control 
-	/*
-	always_ff @(posedge controlClk, negedge reset) begin
-		if(!reset || !en) rowCon <= row; 
-		else if (light_control[0]) rowCon <= rowCon + 2;  
-		else if (light_control[1]) rowCon <= 16;
-		else if (light_control[2]) rowCon <= rowCon - 1;
-		else if (light_control[3]) rowCon <= 0;
-		else  rowCon <= ~rowCon;
-	end
-	*/
 	always_ff @(posedge controlClk, negedge reset) begin
 		if(!reset || !en) rowCon <= row; 
 		else if (lA) rowCon <= rowCon + 1;  // add in some sort of decrement cancel 
