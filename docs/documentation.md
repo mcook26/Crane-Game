@@ -7,17 +7,17 @@ permalink: /doc/
 # Schematics
 ### Overall System Level Diagram
 <div style="text-align: left">
-  <img src="./assets/schematics/system_block_diagram.png" alt="sys" width="100" />
+  <img src="./assets/schematics/system_block_diagram.png" alt="sys" width="1000" />
 </div>
 
 ### Game Timing Diagram
 <div style="text-align: left">
-  <img src="./assets/schematics/game_timing.png" alt="game" width="100" />
+  <img src="./assets/schematics/game_timing.png" alt="game" width="1000" />
 </div>
 
 ### System Schematic
 <div style="text-align: left">
-  <img src="./assets/schematics/full_schematic.png" alt="schem" width="100" />
+  <img src="./assets/schematics/full_schematic.png" alt="schem" width="1000" />
 </div>
 
 
