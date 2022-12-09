@@ -6,19 +6,13 @@ permalink: /doc/
 
 # Schematics
 ### Overall System Level Diagram
-
-
-### FPGA Block Diagram
-
-
-### MCU Block Diagram 
-
+![](system_block_diagram.png)
 
 ### Game Timing Diagram
-
-
+![](game_timing.png)
 
 ### System Schematic
+
 
 # Source Code Overview
 <!-- This section should include information to describe the organization of the code base and highlight how the code connects. -->

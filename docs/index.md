@@ -16,6 +16,10 @@ The motivation behind this project is that we are curious behind the mechanisms 
 
 # System Block Diagram
 
+![](system_block_diagram.png)
+
+Shown above is the system level block diagram of the crane game.  The MCU can receive up to 6 inputs from the user via the joystick and buttons. The MCU then controls the FPGA by asserting an enable line, and depending on the stage and joystick input, outputs the correct stepper motor sequence to the h-bridges.  The FPGA then ouputs the proper data message to the LED matrix to display the current time remaining or the starting the sequence.  The stepper motors control where the carriage moves and descends.  
+
 
 
 
