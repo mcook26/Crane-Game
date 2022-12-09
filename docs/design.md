@@ -6,8 +6,6 @@ permalink: /design/
 
 # MCU Design
 
-
 # FPGA Design
-
 
 # Mechanical Design
