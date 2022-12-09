@@ -38,6 +38,9 @@ The FGPA code is organized into a top level module that controls all of the func
 
 | Item | Part Number | Quantity | Unit Price | Link |
 | ---- | ----------- | ----- | ---- | ---- |
-| Adafruit VL53L0X Time of Flight Distance Sensor |  3317 | 1 | $14.95 |  [link](https://www.adafruit.com/product/3317) |
+| 5 stepper motors |  B094F4CH71 | 1 | $26.99 |  [link]([https://www.adafruit.com/product/3317](https://www.amazon.com/VEVOR-Stepper-Stepping-Printer-Extruder/dp/B094F4CH71/ref=sr_1_2?crid=LM3SP4EJBXVF&keywords=vevor+stepper+motor+59+ncm&qid=1670566600&s=industrial&sprefix=vevor+stepper+motor+59+nc%2Cindustrial%2C226&sr=1-2)) |
+| Joy Stick |  B01N2G0H1T | 1 | $11.99 |  [link]([https://www.adafruit.com/product/3317](https://www.amazon.com/EG-STARTS-Arcade-Classic-Competition/dp/B01N2G0H1T/ref=sr_1_1?keywords=eg+start+red+arcade&qid=1670566339&sr=8-1)) |
+| Button |  0654913663700 | 1 | $6.99 |  [link]([https://www.adafruit.com/product/3317](https://www.amazon.com/Twidec-Waterproof-Momentary-Modification-Switch%EF%BC%88Quality/dp/B07P5WNJG8/ref=asc_df_B07P5WNJG8/?tag=hyprod-20&linkCode=df0&hvadid=398540768796&hvpos=&hvnetw=g&hvrand=17157778640646146457&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1014089&hvtargid=pla-843183269405&psc=1&tag=&ref=&adgrpid=92996539388&hvpone=&hvptwo=&hvadid=398540768796&hvpos=&hvnetw=g&hvrand=17157778640646146457&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1014089&hvtargid=pla-843183269405)) |
+| Wood |  796758 | 1 | $44.89 |  [link]([https://www.adafruit.com/product/3317](https://www.lowes.com/pd/Top-Choice-SkyPly-1-4-in-HPVA-Maple-Plywood-Application-as-4-x-8/1000083311)) |
 
-**Total cost: $14.95**
+**Total cost: $90.87**
