@@ -6,10 +6,6 @@
 // Code to control Adafruit 32x32 LED array and provide countdown
 // with a decreasing "tank" size
 
-// Ideas:
-// 1. Decrement memory as time progrress (have to hold certain rgb at 
-//    set values 
-
 // Top Level Module 
 module led_mat(input  logic en, 
                input  logic reset,
