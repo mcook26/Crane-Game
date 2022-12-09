@@ -4,6 +4,15 @@ title: Design
 permalink: /design/
 ---
 # MCU Design
+The microcontroller inputs are the start button, end button, and Joystick pins and it outputs signals to control the gantry motors and the magnet motor. The motors being used are stepper motors for their accuracy and torque and they require 4 pins each because they have two coils inside[2] that need to each receive a signal in a pulse train that allows the motor to spin in succession. The L293D Quadruple Half-H Drivers were used to drive the motors from the MCU. The motor drivers serve to eliminate drawing too much current from the MCU and connecting enough voltage. The motors require 5V to drive them so the motor drivers had a Vcc line and 4 enable pins from the MCU and the 4 pins from the motor were attached to their corresponding MCU pin. There were also enable pins that were set to 3.3V power. The middle motor is a 12V motor for extra power needed to move the center of the x-axis frame. The 5V and 12 V were provided by an external power supply. [1]
+<div style="text-align: left">
+  <img src="./assets/schematics/game_timing.png" alt="game" width="1000" />
+</div>
+The MCU code dictates the direction the motors spin based on the intended direction switched on from moving the joy stick up, down, left, and right. The order in which the four pins are turned on and off decides the movement. Since we want the three motors in the center to move at the same time they all share the same 4 MCU pins to turn them on. The two side motors are mirrored so the wiring of one is opposite to the other so that they move the same direction. 
+
+<div style="text-align: left">
+  <img src="./assets/schematics/game_timing.png" alt="game" width="1000" />
+</div>
 
 # FPGA Design
 #### Display Stages
@@ -33,3 +42,31 @@ As noted above, these stages were each controlled by both the TIM variable as we
 Lastly, as noted above, the FPGA is only controlled via a single bit enable line from the MCU.  The enable line is asserted upon the first button push and deasserted on the second.  If never deasserted, the FPGA timer will reach a maximum value, and perform the final flash automatically. This does not need to be sent over to the MCU because the clocks are synchronized to a significant resolution.
 
 # Mechanical Design
+The main frame is square at 4ft by 4ft and is about 2ft high. The frame supports a two axis gantry to move the box with the magnet that drops down to pick up prizes. The frame is completely made out of 80/20 aluminum extrusion and the magnet housing and the pulley wheels on the motors are made out of PLA. 
+The design utilizes 1 stepper motor to move the magnet housing side to side in the x direction, which slides on two 80/20 bars.
+
+<div style="text-align: left">
+  <img src="./assets/img/led_mat_half.jpg" alt="schem" width="1000" />
+</div>
+
+A rubber belt is secured on either side of the box to allow it to be pulled back and forth by the motor. Plastic pulleys were 3D printed to get the size of the belt teeth and width of the belt correct to allow the belt to grab enough on the pulley to initiate rotation
+Inside the box is another stepper motor that has a spool attached to it that drops and lifts up the magnet at the end of the game. 
+
+<div style="text-align: left">
+  <img src="./assets/img/led_mat_half.jpg" alt="schem" width="1000" />
+</div>
+
+The ends of the two rails are secured with smaller pieces of 80/20 and wheels are attached to allow for the whole x-axis to move along the y-axis, creating a 2D plane for game play. 
+
+<div style="text-align: left">
+  <img src="./assets/img/led_mat_half.jpg" alt="schem" width="1000" />
+</div>
+
+3 stepper motors move the y-axis because two are needed on either side and one is needed in the center to account for uneven drift side to side. 
+
+<div style="text-align: left">
+  <img src="./assets/img/led_mat_half.jpg" alt="schem" width="1000" />
+</div>
+
+A wide board of wood is placed on the track the wheels move down in order to allow for any drift that may occur. The wood holds in place taut strings that two screws on the undercarriage of the x-axis bars slide between to keep the wheels on track. 
+
