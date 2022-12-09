@@ -19,3 +19,6 @@ The motivation behind this project is that we are curious behind the mechanisms 
   <img src="./assets/schematics/system_block_diagram.png" alt="sys" width="1000" />
 </div>
 Shown above is the system level block diagram of the crane game.  The MCU can receive up to 6 inputs from the user via the joystick and buttons. The MCU then controls the FPGA by asserting an enable line, and depending on the stage and joystick input, outputs the correct stepper motor sequence to the h-bridges.  The FPGA then ouputs the proper data message to the LED matrix to display the current time remaining or the starting the sequence.  The stepper motors control where the carriage moves and descends.  
+
+# New Hardware
+The new hardware we will be utilizing is a Adafruit 32x32 LED matrix as well as a Adafruit joystick, STML293 motor drivers, and 5 stepper motors. The 32x32 LED matrix will be controlled by the FGPA while the joystick and MCU will control the stepper motors via the motor drivers.  The LED matrix will be utilized as a timer and discussed more in the FPGA design section.  The joystick and stepper motors will be utilized to move the carriage and discussed further in the MCU design section.
