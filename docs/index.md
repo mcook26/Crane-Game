@@ -15,9 +15,9 @@ In this final project, we built a crane game controlled by an FPGA and MCU. The 
 The motivation behind this project is that we are curious behind the mechanisms behind these common and seemingly simple games. Arcade games have been around for a long time and employ a variety of different hardware and software components, and we believe that it will provide a fun medium to learn more about real world systems. These games require consistent operation under a variety of conditions and extended periods of time so it will also be interested to see how the system responds to multiple tests and the challenges in building a reliable system.
 
 # System Block Diagram
-
-![](system_block_diagram.png)
-
+<div style="text-align: left">
+  <img src="./assets/schematics/system_block_diagram.png" alt="sys" width="100" />
+</div>
 Shown above is the system level block diagram of the crane game.  The MCU can receive up to 6 inputs from the user via the joystick and buttons. The MCU then controls the FPGA by asserting an enable line, and depending on the stage and joystick input, outputs the correct stepper motor sequence to the h-bridges.  The FPGA then ouputs the proper data message to the LED matrix to display the current time remaining or the starting the sequence.  The stepper motors control where the carriage moves and descends.  
 
 
