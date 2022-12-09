@@ -46,26 +46,26 @@ The main frame is square at 4ft by 4ft and is about 2ft high. The frame supports
 The design utilizes 1 stepper motor to move the magnet housing side to side in the x direction, which slides on two 80/20 bars.
 
 <div style="text-align: left">
-  <img src="./assets/img/craneHousing.jpg" alt="schem" width="1000" />
+  <img src="./assets/img/house.png" alt="house" width="1000" />
 </div>
 
 A rubber belt is secured on either side of the box to allow it to be pulled back and forth by the motor. Plastic pulleys were 3D printed to get the size of the belt teeth and width of the belt correct to allow the belt to grab enough on the pulley to initiate rotation
 Inside the box is another stepper motor that has a spool attached to it that drops and lifts up the magnet at the end of the game. 
 
 <div style="text-align: left">
-  <img src="./assets/img/led_mat_half.jpg" alt="schem" width="1000" />
+  <img src="./assets/img/craneHousing.jpg" alt="craneHouse" width="1000" />
 </div>
 
 The ends of the two rails are secured with smaller pieces of 80/20 and wheels are attached to allow for the whole x-axis to move along the y-axis, creating a 2D plane for game play. 
 
 <div style="text-align: left">
-  <img src="./assets/img/led_mat_half.jpg" alt="schem" width="1000" />
+  <img src="./assets/img/craneWheels.jpg" alt="wheels" width="1000" />
 </div>
 
 3 stepper motors move the y-axis because two are needed on either side and one is needed in the center to account for uneven drift side to side. 
 
 <div style="text-align: left">
-  <img src="./assets/img/led_mat_half.jpg" alt="schem" width="1000" />
+  <img src="./assets/img/sideMotor.jpg" alt="sideMotor" width="1000" />
 </div>
 
 A wide board of wood is placed on the track the wheels move down in order to allow for any drift that may occur. The wood holds in place taut strings that two screws on the undercarriage of the x-axis bars slide between to keep the wheels on track. 
