@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Gameplay
-permalink: /doc/
+permalink: /gameplay/
 ---
 Here is a video of the system's full operation.
 
