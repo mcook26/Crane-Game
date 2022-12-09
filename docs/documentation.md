@@ -12,6 +12,7 @@ permalink: /doc/
 ![](game_timing.png)
 
 ### System Schematic
+![](full_schematic.png)
 
 
 # Source Code Overview
