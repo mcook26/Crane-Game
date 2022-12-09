@@ -6,12 +6,12 @@ permalink: /design/
 # MCU Design
 The microcontroller inputs are the start button, end button, and Joystick pins and it outputs signals to control the gantry motors and the magnet motor. The motors being used are stepper motors for their accuracy and torque and they require 4 pins each because they have two coils inside[2] that need to each receive a signal in a pulse train that allows the motor to spin in succession. The L293D Quadruple Half-H Drivers were used to drive the motors from the MCU. The motor drivers serve to eliminate drawing too much current from the MCU and connecting enough voltage. The motors require 5V to drive them so the motor drivers had a Vcc line and 4 enable pins from the MCU and the 4 pins from the motor were attached to their corresponding MCU pin. There were also enable pins that were set to 3.3V power. The middle motor is a 12V motor for extra power needed to move the center of the x-axis frame. The 5V and 12 V were provided by an external power supply. [1]
 <div style="text-align: left">
-  <img src="./assets/schematics/game_timing.png" alt="game" width="1000" />
+  <img src="./assets/schematics/hbridge.png" alt="hbridge" width="1000" />
 </div>
 The MCU code dictates the direction the motors spin based on the intended direction switched on from moving the joy stick up, down, left, and right. The order in which the four pins are turned on and off decides the movement. Since we want the three motors in the center to move at the same time they all share the same 4 MCU pins to turn them on. The two side motors are mirrored so the wiring of one is opposite to the other so that they move the same direction. 
 
 <div style="text-align: left">
-  <img src="./assets/schematics/game_timing.png" alt="game" width="1000" />
+  <img src="./assets/schematics/motor.png" alt="motor" width="1000" />
 </div>
 
 # FPGA Design
@@ -46,7 +46,7 @@ The main frame is square at 4ft by 4ft and is about 2ft high. The frame supports
 The design utilizes 1 stepper motor to move the magnet housing side to side in the x direction, which slides on two 80/20 bars.
 
 <div style="text-align: left">
-  <img src="./assets/img/led_mat_half.jpg" alt="schem" width="1000" />
+  <img src="./assets/img/craneHousing.jpg" alt="schem" width="1000" />
 </div>
 
 A rubber belt is secured on either side of the box to allow it to be pulled back and forth by the motor. Plastic pulleys were 3D printed to get the size of the belt teeth and width of the belt correct to allow the belt to grab enough on the pulley to initiate rotation
