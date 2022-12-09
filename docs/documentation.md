@@ -6,13 +6,19 @@ permalink: /doc/
 
 # Schematics
 ### Overall System Level Diagram
-![](system_block_diagram.png)
+<div style="text-align: left">
+  <img src="./assets/schematics/system_block_diagram.png" alt="sys" width="100" />
+</div>
 
 ### Game Timing Diagram
-![](game_timing.png)
+<div style="text-align: left">
+  <img src="./assets/schematics/game_timing.png" alt="game" width="100" />
+</div>
 
 ### System Schematic
-![](full_schematic.png)
+<div style="text-align: left">
+  <img src="./assets/schematics/full_schematic.png" alt="schem" width="100" />
+</div>
 
 
 # Source Code Overview
