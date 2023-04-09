@@ -32,7 +32,7 @@ As noted in the design section, the MCU interfaces with the FGPA via a 1 bit ena
 
 The FGPA code is organized into a top level module that controls all of the functionality as well as performs boolean operations to set the display output.  These are determined based on the timer submodule which increments after each slow clock cycle.  More details are provided in the FGPA section.
 
-Test change
+Test change x2
 
 
 # Bill of Materials
